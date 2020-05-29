@@ -1,0 +1,21 @@
+[{  
+    
+    "product": "Äpfel",
+    "price": 2
+  },
+  {
+    
+    "product": "potatoes",
+    "price": 2
+  },
+  {
+    
+    "product": "Milk",
+    "price": 0.80
+  },
+  {
+    
+    "product": "farine",
+    "price": "0.50"
+  }
+]

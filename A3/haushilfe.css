@@ -1,0 +1,127 @@
+.intro {
+	width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: #F5DA81;
+    border: groove;
+}
+
+
+h1 {
+	text-align: center;
+
+}
+
+#needhelp {
+	background-color: #DA81F5;
+    font-size: 18px;
+    border-radius:12px;
+    position: absolute;
+	left: 30%;
+	top: 35%;
+}
+
+#offerhelp {
+
+	background-color: #DA81F5;
+    font-size: 18px;
+    border-radius:12px;
+    position: absolute;
+	left: 60%;
+	top: 35%;
+}
+
+p {
+	margin: 5%;
+
+}
+
+h3 {
+	margin: 5%;
+	text-align: center;
+
+
+}
+
+.categories {
+	width: 30%;
+    height: 90%;
+	margin: 5%;
+
+    background-color: #F5DA81;
+	border: groove;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+	background: #F6CED8;
+}
+
+.total {
+	width: 30%;
+    height: 40%;
+    margin: 5%;
+    background-color: #F5DA81;
+	border: groove;
+}
+
+.gl {
+	position: absolute;
+	top: 51%;
+	left: 40%;
+	width: 55%;
+	height: 40%;
+	border: groove;
+    background-color: #F5DA81;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #DA81F5;
+  }
+
+  .chores {
+	position: absolute;
+	top: 95%;
+	left: 40%;
+	width: 55%;
+	height: 30%;
+	border: groove;
+    background-color: #F5DA81;
+  }
+
+  h2 { 
+	  left: 45%;
+	  text-align: center;
+	
+  }
+
+#newL {
+	background-color: #DA81F5;
+    font-size: 18px;
+    border-radius:12px;
+    position: absolute;
+	left: 15%;
+	top: 70%;
+}
+
+#selectpayment {
+	position: absolute;
+	left: 15%;
+
+}
+
+
+

@@ -1,0 +1,157 @@
+.rahmen{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: lightblue;
+    border: groove;
+}
+
+.container{ 
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+}
+
+.anleitung{
+    background-color:white;
+    color: black;
+    border: groove;
+    border-width: 1px;
+    margin: 5%;
+    text-align: center;
+    border-radius:12px;
+}
+
+.kasten1{
+    background-color: white;
+    border: groove;
+    border-width:1px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 32%;
+    height: 55%;
+    border-radius:12px;
+
+}
+
+
+.kasten2{
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 45%;
+    height: 55%;
+    border: groove;
+    border-width:1px;
+    border-radius:12px;
+}
+
+.field{
+    margin: 5%;
+    background-color:white;
+
+}
+
+.gamemode{
+    margin: 5%;
+}
+
+.timemode {
+    margin: 5%;
+}
+
+#startgame {
+    background-color: lightblue;
+    font-size: 24px;
+    border-radius:12px;
+    position: absolute;
+    left: 30%;
+
+
+}
+
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: beige;
+}
+
+
+
+.sequencecard {
+    width: 23%;
+    height: 35%;
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    border: solid;
+    border-radius: 12px;
+    border-width: 0.5px;
+    transition: .5s;
+    transform: scale(1);
+
+  }
+
+  .sequencecard:active {
+      transform: scale(0.97);
+      transition: transform 0.2s; 
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: lightblue;
+    
+
+  }
+
+
+
+  .cardgame {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+
+  .sequencecard.flip{
+      transform: rotateY(180deg);
+  }
+
+  .front-face{
+      transform: rotateY(180deg);
+  }
+
+  .sequencecard:active {
+
+    transform: scale(0.97);
+    transition: transform .2s;
+ 
+  }
+
+  #countdown { 
+      margin: 5%;
+      border: solid;
+      border-radius: 12px;
+      text-align: center;
+      border-color: lightblue;
+  }

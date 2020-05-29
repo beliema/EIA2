@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Haushaltshilfe</title>
+	<link rel="stylesheet" href="haushilfe.css" type="text/css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+	<script src="haushilfe.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+			<main>
+					<div class="container"> 
+							<div class="intro">
+
+								<h1>Haushaltshilfe</h1> 
+
+									<div class="anleitung"> 
+										<p> In difficult times like Corona it is important to help each other as good as we can. If you need help the formulars can be filled with whatever task you want to give. 
+												Just fill in the blank spaces. If you want to help you can create an account and get tasks that will be rewarded. 
+												Stay safe. 
+										</p>
+
+									</div>
+
+									
+
+							</div>
+
+
+							<div class="categories">
+
+								<h3 id="choosecategorie"> Choose a category!</h3>
+
+								<table>
+									<tr>
+									  <td>Groceries</td>
+									  <td><input id="gamemode1" type="checkbox" onclick="showGrocery()"></td>
+									</tr>
+									<tr>
+										<td>Chores</td>
+										<td><input id="gamemode2" type="checkbox" onclick="showChores()"></td>
+									  </tr>
+									  <tr>
+										<td>Financial</td>
+										<td><input id="gamemode3" type="checkbox"></td>
+									  </tr>
+									</table>
+
+									 
+
+							</div>
+
+				
+						
+
+						<div class="total"> 
+						<h3 id="totalcosts"> Your total will be:</h3>
+						</br>
+						
+						<div id="totaltable">
+
+							<table>
+								<tr>
+									<th>Article</th>
+									<th>Amount</th>
+									<th>Where</th>
+									<th>Price</th>
+								</tr>
+								<tr>								  
+								  <td><p id="productend"></p></td>
+								  <td><p id="amountend"></td>
+								  <td><p id="whereend"></td>
+								  <td><p id="priceend"></td>
+								</tr>
+							  </table>
+
+
+
+						</div>
+
+							<p>Choose payment option:</p> 
+
+							<select id="selectpayment">
+								<option value="Paypal">Paypal</option>
+								<option value="CreditCard">Credit Card</option>
+								<option value="Klarna">Klarna</option>
+								<option value="bill">get a bill</option>
+
+							</select>
+						
+
+
+						</div>
+
+						<div id="groceryinput">
+							<h2 id="groceries"> Grocery list</h2>
+
+							<table>
+							  <tr>
+								<th>Article</th>
+								<th>Amount</th>
+								<th>Where</th>
+								<th></th>
+							  </tr>
+							  <tr>
+								<td><select id="articledropdown" placeholder="Article"></select></td>
+								<td><input id="howmuch" type="number"></td>
+								<td><select id="wheretoget" type="text" placeholder="Where"></td>
+								<td><button type="button" id="addtolist" onclick="addToCart()">Add to cart</button></td>
+							  </tr>
+							  <tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
+							  
+							</table>
+
+
+						</div>
+
+
+
+						<div id="choreInput">
+							<h2>Chores</h2> 	
+						
+							<table>
+							  <tr>
+								<th>What?</th>
+								<th>How much?</th>
+								
+							  </tr>
+							  <tr>
+								<td><input class="newtask" type="text" placeholder="Chore"></td>
+								<td><input class="setpayment" type="text" placeholder="payment"></td>
+								
+							  </tr>
+							  <tr>
+								<td><input class="newtask" type="text" placeholder="Chore"></td>
+								<td><input class="setpayment" type="text" placeholder="payment"></td>
+								
+							  </tr>
+							  <tr>
+								<td><input class="newtask" type="text" placeholder="Chore"></td>
+								<td><input class="setpayment" type="text" placeholder="payment"></td>
+								
+							  </tr>
+							
+							  
+							</table>
+
+						
+
+						</div>
+
+						</div>
+
+				</main>
+
+
+
+</body>
+
+</html>
+
+</doctype>
+
+

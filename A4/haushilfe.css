@@ -1,0 +1,148 @@
+.intro {
+	width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: #F5DA81;
+    border: groove;
+}
+
+
+h1 {
+	text-align: center;
+
+}
+
+#needhelp {
+	background-color: #DA81F5;
+    font-size: 18px;
+    border-radius:12px;
+    position: absolute;
+	left: 30%;
+	top: 35%;
+}
+
+#offerhelp {
+
+	background-color: #DA81F5;
+    font-size: 18px;
+    border-radius:12px;
+    position: absolute;
+	left: 60%;
+	top: 35%;
+}
+
+p {
+	margin: 5%;
+
+}
+
+h3 {
+	margin: 5%;
+	text-align: center;
+
+
+}
+
+.categories {
+	width: 30%;
+    height: 90%;
+	margin: 5%;
+
+    background-color: #F5DA81;
+	border: groove;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+	background: #F6CED8;
+}
+
+.total {
+	width: 30%;
+    height: 40%;
+    margin: 5%;
+    background-color: #F5DA81;
+	border: groove;
+}
+
+#groceryinput {
+	width: 51%;
+	position:absolute;
+	left:34%;
+	top:45%;
+	border: groove;
+	background-color: #F5DA81;
+	display:none;
+	
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border-color: black;
+  }
+  
+  td, th {
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #DA81F5;
+  }
+
+  #choreInput {
+	position: absolute;
+	top: 80%;
+	left: 34%;
+	width: 51%;
+	height: 30%;
+	border: groove;
+	background-color: #F5DA81;
+	display:none;
+  }
+
+  h2 { 
+	  left: 45%;
+	  text-align: center;
+	
+  }
+
+#categoryselect {
+    font-size: 14px;
+	
+}
+
+#selectpayment {
+	position: absolute;
+	left: 15%;
+
+}
+
+main{
+	width:90%;
+	height:90%;
+
+}
+
+#articledropdown{
+	width: 150px;
+}
+
+#wheretoget{
+	width:150px;
+}
+
+#whichprice{
+	width:150px;
+}
+
+#howmuch{
+	width:150px;
+}
+
+#addtolist{
+	width:150px;
+}
