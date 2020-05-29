@@ -11,7 +11,7 @@ var L06_Haushilfe;
     window.addEventListener("load", handleLoad);
     let totalcost = 0;
     //let url: string = "haushilfe.html";
-    let url = "http://localhost:5001";
+    let url = "https://beliemasapp.herokuapp.com";
     function handleLoad(_event) {
         return __awaiter(this, void 0, void 0, function* () {
             let response = yield fetch("articles.json");
