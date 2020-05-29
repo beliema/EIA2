@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+		
+
+<head>
+	<meta charset="utf-8" />
+	<title>Haushaltshilfe</title>
+	<link rel="stylesheet" href="haushilfe.css" type="text/css" media="screen" />
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+	<script src="haushilfe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="GenerateContent.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+			<main>
+					<div class="container"> 
+							<div class="intro">
+
+								<h1>Haushaltshilfe</h1> 
+
+									
+										<p> In difficult times like Corona it is important to help each other as good as we can. If you need help the formulars can be filled with whatever task you want to give. 
+												Just fill in the blank spaces. If you want to help you can create an account and get tasks that will be rewarded. 
+												Stay safe. 
+										</p>
+
+									</div>
+
+									
+
+							</div>
+
+
+							<div class="categories">
+
+								<h3 id="choosecategorie"> Choose a category!</h3>
+
+								<form id="orderForm" method="GET">
+									<div>
+					
+										<fieldset id="Aufgaben">
+												<legend>Aufgaben</legend>
+											<div>
+													<label for="Einkaufen">Einkaufen</label> 
+													<input id="Einkaufen" name="tasks" type="radio" value="einkaufen">
+													<label for="Chores">Haushalt</label> 
+													<input id="Chores" name="tasks" type="radio" value="haushalt">
+											</div> 
+
+										</fieldset>
+										<fieldset id="FeldEinkaufen">
+												<legend>Einkaufen</legend>
+
+												<div>
+															<select name="groceries">
+																<option price="2.0" unit="Äpfel" value="Äpfel">Äpfel</option>
+																<option price="1.5" unit="Mehl" value="Mehl">Mehl</option>
+																<option price="2.5" unit="Kartoffeln" value="Kartoffeln">Kartoffeln</option>
+																<option price="0.8" unit="Milch" value="Milch">Milch</option>
+																<option price="1.7" unit="Käse" value="Käse">Käse</option>
+																<option price="0.6" unit="Joghurt" value="Joghurt">Joghurt</option>
+															</select>
+
+															<input id="amountarticle" type="number" name="Amount" min="1.0" max="10.0" step="1.0" placeholder="Anzahl">
+
+															<select name="store">
+																<option value="Lidl">Lidl</option>
+																<option value="Edeka">Edeka</option>
+																<option value="Norma">Norma</option>
+																<option value="Aldi">Aldi</option>
+																<option value="Netto">Netto</option>
+																<option value="Marktkauf">Marktkauf</option>
+															</select>
+
+															<button id="einkaufbestätigen" type="button">In den Warenkorb</button>
+
+												</div>
+											
+										</fieldset>
+										<fieldset id="FeldChores">
+												<legend>Haushalt</legend>
+													<input id="haushalt" type="checkbox" price="10.00" unit="Rasen mähen" value="10" name="Rasen mähen">
+													<label for="haushalt">Rasen mähen </label>
+
+													<input id="haushalt" type="checkbox" price="5.00" unit="Raum putzen" value="5" name="Raum putzen">
+													<label for="haushalt"> Raum putzen </label>
+													<input id="amountarticle" type="number" name="Amount" min="1.0" max="5.0" step="1.0" placeholder="Anzahl Räume">
+
+													<input id="haushalt" type="checkbox" price="15.00" unit="Hund ausführen" value="15" name="Hund ausführen">
+													<label for="haushalt"> Hund ausführen </label>
+
+													<input id="haushalt" type="checkbox" price="7.00" unit="Blumen gießen" value="7" name="Blumen gießen">
+													<label for="haushalt"> Blumen gießen </label>
+
+													<button id="einkaufbestätigenhh" type="button">In den Warenkorb</button>
+
+										</fieldset>
+									</div>
+								</form>
+
+								<!---- <table>
+									<tr>
+									  <td>Groceries</td>
+									  <td><input id="gamemode1" type="checkbox" onclick="showGrocery()"></td>
+									</tr>
+									<tr>
+										<td>Chores</td>
+										<td><input id="gamemode2" type="checkbox" onclick="showChores()"></td>
+									  </tr>
+									  <tr>
+										<td>Financial</td>
+										<td><input id="gamemode3" type="checkbox" onclick="showFinances()"></td>
+									  </tr>
+									</table> --->
+
+									 
+
+							</div>
+
+				
+						
+
+						<!---- <div class="total"> 
+						<h3 id="totalcosts"> Your total will be:</h3>
+						</br>
+						
+						<div id="totaltable">
+						
+							
+
+							<table id="myTable">
+								<tr>
+									<th>Article</th>
+									<th>Amount</th>
+									<th>Where</th>
+									<th>Price</th>
+								</tr>
+								<tr>								  
+								  <td><p id="productend"></p></td>
+								  <td><p id="amountend"></td>
+								  <td><p id="whereend"></td>
+								  <td><p id="priceend"></td>
+								</tr>
+							</table>
+						</div>
+
+							<p>Choose payment option:</p> 
+
+							<select id="selectpayment">
+								<option value="Paypal">Paypal</option>
+								<option value="CreditCard">Credit Card</option>
+								<option value="Klarna">Klarna</option>
+								<option value="bill">get a bill</option>
+					
+							</select>
+
+							<button type="button" id="confirmOrder" onclick="sendOrder()">Confirm your order</button>
+							<button type="button" id="deleteOrder" onclick="deleteOrder()">Delete last entry</button>
+
+
+						</div> --->
+
+						<!---- <div id="groceryinput">
+							<h2 id="groceries"> Grocery list</h2>
+
+							<table>
+							  <tr>
+								<th>Article</th>
+								<th>Amount</th>
+								<th>Where</th>
+								<th></th>
+							  </tr>
+							  <tr>
+								<td><select id="articledropdown" placeholder="Article"></select></td>
+								<td><input id="howmuch" type="number"></td>
+								<td><select id="wheretoget" type="text" placeholder="Where"></td>
+								<td><button type="button" id="addtolist" onclick="addToCart()">Add to cart</button></td>
+							  </tr>
+							  <tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
+							  
+							</table> 
+
+
+						</div> --->
+
+
+
+					<!----	<div id="choreInput">
+							<h2>Chores</h2> 	
+						
+							<table>
+							  <tr>
+								<th>What?</th>
+								<th>How much?</th>
+								
+							  </tr>
+							  <tr>
+								<td><select id="newtask"  placeholder="Chore"></select></td>
+								<td><input id="setpayment" type="number" placeholder="payment"></td>
+								<td><button type="button" id="addtolist" onclick="addToCartChores()">Add to cart</button></td>
+							  </tr>
+							 
+							  
+							
+							  
+							</table>
+
+						
+
+						</div> 
+
+						<div id="financeInput">
+							<h2>Finances</h2>
+
+								<table>
+									<tr>
+									  <td>Geld einzahlen</td>
+									  <td><input id="giveMoney" type="checkbox"></td>
+									</tr>
+									<tr>
+									  <td>Geld abheben</td>
+									  <td><input id="getMoney" type="checkbox"></td>
+									</tr>
+								</table>
+
+							</br>
+
+							<div class="slidecontainer">
+								1 <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 200
+							<p> value <span id="demo"></span></p> 
+							</br> </br> 
+							
+							</div> 
+
+
+						</div> --->
+
+						<div class="Bestellung">
+							<h3>Deine Bestellung</h3>
+							<div id="order">
+								<div id="diveinkauf"> </div>
+								<div id="divchores"></div>
+								<p>Gesamtkosten: 
+									<span id="total"></span>
+									€
+								</p>
+							</div>
+							<button id="restart" type="reset" form="orderForm">Zurücksetzen</button>
+							<button id="abschicken" type="button" form="orderForm">Abschicken</button>
+						</div>
+
+
+
+					</div>
+
+				</main>
+
+
+
+</body>
+
+</html>
+
+</doctype>
+
+

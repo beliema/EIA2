@@ -1,0 +1,14 @@
+{
+  "name": "a6ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "haushilfe.js",
+  "scripts": {
+    "start": "node Server/Server.js"
+  },
+  "author": "beliema",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.5"
+  }
+}

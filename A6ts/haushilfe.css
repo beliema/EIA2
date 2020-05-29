@@ -1,0 +1,121 @@
+.intro {
+	width: 100%;
+    height: 40%;
+    margin: 5%;
+    background-color: #F5DA81;
+    border: groove;
+}
+
+
+h1 {
+	text-align: center;
+
+}
+
+.Bestellung {
+	background-color: #F5DA81;
+	border: groove;
+	width: 100%;
+	margin: 5%;
+}
+
+
+
+p {
+	margin: 2%;
+
+}
+
+h3 {
+	margin: 5%;
+	text-align: center;
+
+
+}
+
+.categories {
+	width:100%;
+  height: 50%;
+	margin: 5%;
+
+  background-color: #F5DA81;
+	border: groove;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+	background: #F6CED8;
+}
+
+.total {
+	width: 30%;
+    height: 40%;
+    margin: 5%;
+    background-color: #F5DA81;
+	border: groove;
+}
+
+#groceryinput {
+	width: 51%;
+	position:absolute;
+	left:34%;
+	top:45%;
+	border: groove;
+	background-color: #F5DA81;
+	display:none;
+	
+}
+
+
+  
+  
+ 
+
+  #choreInput {
+	position: absolute;
+	top: 70%;
+	left: 34%;
+	width: 51%;
+	height: 30%;
+	border: groove;
+	background-color: #F5DA81;
+	display:none;
+  }
+
+  h2 { 
+	  left: 45%;
+	  text-align: center;
+	
+  }
+
+#categoryselect {
+    font-size: 14px;
+	
+}
+
+#selectpayment {
+	position: absolute;
+	left: 20%;
+	top: 97%;
+
+}
+
+main{
+	width:90%;
+	height:90%;
+
+}
+
+
+#financeInput {
+	position: absolute;
+	top: 105%;
+	left: 34%;
+	width: 51%;
+	height: 30%;
+	border: groove;
+	background-color: #F5DA81;
+	display:none;
+}
+
