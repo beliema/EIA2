@@ -1,0 +1,32 @@
+[
+      {
+          "name": "Äpfel",
+          "price": 2.00,
+          "store": "Lidl"
+      },
+      {
+          "name": "Mehl",
+          "price": 1.50,
+          "store": "Edeka"
+      },
+      {
+          "name": "Kartoffeln",
+          "price": 2.50,
+          "store": "Norma"
+      },
+      {
+        "name": "Milch",
+        "price": 0.80,
+        "store": "Aldi"
+      },
+      {
+        "name": "Käse",
+        "price": 1.70,
+        "store": "Netto"
+      },
+      {
+        "name": "Joghurt",
+        "price": 0.60,
+        "store": "Marktkauf"
+      }
+  ]
