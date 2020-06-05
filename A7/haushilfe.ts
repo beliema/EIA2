@@ -1,8 +1,11 @@
+import * as Mongo from "mongodb";
+
 namespace L06_Haushilfe {
     window.addEventListener("load", handleLoad);
     let totalcost: number = 0;
     //let url: string = "haushilfe.html";
     let url: string = "http://localhost:5001";
+    
 
     async function handleLoad(_event: Event): Promise<void> {
         
@@ -13,6 +16,8 @@ namespace L06_Haushilfe {
         generateContent(data);
 
         console.log("verknüpft");
+
+        // mongodb+srv://beliema:<password>@eia2-ejwj9.mongodb.net/<dbname>?retryWrites=true&w=majority
 
         //Festlegung der Variablen mit Verbindung der Elemente aus dem HTML Code
 
@@ -73,6 +78,10 @@ namespace L06_Haushilfe {
          let response: Response = await fetch(url + "?" + query.toString()) ;
          let responseText: string = await response.text();
          alert(responseText);
+
+         let mongoClient: Mongo.MongoClient = new Mongo.MongoClient('http://localhost:5001');
+            await mongoClient.connect();
+         
          
 
      }

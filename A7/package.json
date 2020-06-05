@@ -4,7 +4,7 @@
   "description": "",
   "main": "haushilfe.js",
   "scripts": {
-    "start": "node A6ts/Server/Server.js"
+    "start": "node A6ts/Server/Server.js remote" 
   },
   "repository": {
     "type": "git",
@@ -21,4 +21,5 @@
     "@types/node": "^14.0.5",
     "mongodb": "^3.5.8"
   }
+  
 }

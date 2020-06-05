@@ -7,6 +7,7 @@ export namespace L06_Haushilfe {
   console.log(server);
 
 
+
   let port : number | string | undefined = process.env.PORT;
     if (port == undefined)
         port = 5001;
