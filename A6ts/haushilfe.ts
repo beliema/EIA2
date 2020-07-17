@@ -1,3 +1,5 @@
+
+
 namespace L06_Haushilfe {
     window.addEventListener("load", handleLoad);
     let totalcost: number = 0;
